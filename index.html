@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            /* background-image: url('coffee.jpg'); Add a background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+            border-radius: 5px; /* Add some border-radius */
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: #fdfdfd; /* Change text color to white */
+            /* background-image: url(coffee_shop.jpg); */
+            background-color: rgba(0, 0, 0, 0.5); /* Add background color with opacity */
+            border-radius: 10px; /* Add border-radius for a rounded look */
+            margin-bottom: 30px; /* Add some space at the bottom */
+        }
+
+        .intro h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Add text shadow */
+            color: #fdfdfd; /* Adjusting the text color */
+        }
+
+        .intro p {
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6); /* Add text shadow */
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #fb5c07;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background-color: #bf7b62;
+        }
+
+        #text_container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .text-box {
+    /* background-color:#c07a58;  */
+            background-color:rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            margin: 0;
+            width: 30%;
+            transition: transform 0.3s; /* Add transition effect */
+            text-align: center; /* Align text in the center */
+        }
+
+        .text-box:hover {
+            transform: scale(1.05); /* Add hover effect */
+        }
+
+        .text-box .big_text {
+            font-size: 24px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #fff; /* Add border */
+            padding-bottom: 10px; /* Add padding */
+        }
+
+        .text-box .small_text {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+  
+        .footer-text {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 12px; /* Adjust font size */
+        }
+
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="mycart.html">Products</a> 
+    </div>
+
+    <div class="content">
+        <div class="intro">
+            <h1>Welcome to Coffee House</h1>
+            <p>Indulge in the rich flavors and aromas of our hand-selected, artisanal coffees. Experience the finest coffee from around the world.</p>
+            <a href="product.html" class="btn">Explore Our Menu</a>
+        </div>
+    </div>
+    <div id="text_container">
+        <div class="text-box">
+            <div class="big_text">Coffee and us</div>
+            <div class="small_text">You can’t imagine a day without a cup of coffee and we believe that your office and on-the-go coffee should never be a compromise</div>
+        </div>
+        <div class="text-box">
+            <div class="big_text">Our coffee</div>
+            <div class="small_text">We have carefully selected great tasting coffees from around the world.</div>
+        </div>
+        <div class="text-box">
+            <div class="big_text">Coffee in cafe</div>
+            <div class="small_text">Professionally customized and reliable solutions for convenience stores, hotels, cafés and restaurants to serve the highest in-cup-quality.</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-text">
+            <p>&copy; 2023 My cafe All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Beauty Products - Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .product {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h2 {
+            color: #8c6b59;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .product .add-to-cart {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #8c6b59;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .product .add-to-cart:hover {
+            background-color: #724a3c;
+        }
+
+        .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.product {
+    flex: 0 0 calc(30% - 20px);
+    margin: 15px;
+    max-width: 300px;
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product.html">Menu</a>
+        <a href="mycart.html">My Cart</a>
+    </div>
+
+    <div class="content">
+        <div class="product">
+            <img src="scrub.jpg" alt="Coffee Scrub" width="300px" height="300px">
+            <h2>Coffee Scrub</h2>
+            <p>Our invigorating coffee scrub exfoliates, moisturizes, and stimulates blood flow, leaving your skin smooth, glowing, and refreshed.</p>
+            <p>Price: $15.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Coffee Scrub" data-price="15.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="mask.jpg" alt="Coffee Mask" width="300px" height="300px">
+            <h2>Coffee Mask</h2>
+            <p>Indulge in our rejuvenating coffee mask that tightens, brightens, and revitalizes your skin, giving you a youthful and radiant complexion.</p>
+            <p>Price: $18.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Coffee Mask" data-price="18.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="lotion.jpg" alt="Coffee Lotion" width="300px" height="300px">
+            <h2>Coffee Lotion</h2>
+            <p>Pamper your skin with our luxurious coffee-infused lotion that deeply hydrates, firms, and nourishes, leaving you with silky-smooth and supple skin.</p>
+            <p>Price: $20.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Coffee Lotion" data-price="20.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="bodyscrub.jpg" alt="Body scrub" width="300px" height="300px">
+            <h2>Body scrub</h2>
+            <p>The Coffee Body Scrub gently exfoliates and polishes skin. With the perfect grain size to scrub away dull and dead skin, the body feels irresistibly soft.</p>
+            <p>Price: $35.80</p>
+            <button class="add-to-cart" data-name="Body scrub" data-price="35.80">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="facewash.jpg" alt="Face wash" width="300px" height="300px">
+            <h2>Face wash</h2>
+            <p>Coffee deep cleanses and increases collagen production for youthful skin. It also helps reduce cellulite</p>
+            <p>Price: $24.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Face wash" data-price="24.00">Add to Cart</button></a>
+        </div>
+
+
+        <div class="product">
+            <img src="shampoo.jpg" alt="Shampoo" width="300px" height="300px">
+            <h2>Shampoo</h2>
+            <p>Shampoo uses an organic active ingredient of coffee, it has been proven to stimulate hair follicles into producing healthy hair growth and can also penetrate the scalp, enabling hair to shine and provide added condition and body.</p>
+            <p>Price: $40.00</p>
+            <button class="add-to-cart" data-name="Shampoo" data-price="40.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="hairloil.jpg" alt="Hair oil" width="300px" height="300px">
+            <h2>Hair oil</h2>
+            <p>The Coffee Scalp & Hair oil is a nourishing oil that contains a blend of hair-enriching ingredients such as Argan Oil and Redensyl that promotes healthy hair.</p>
+            <p>Price: $20.00</p>
+            <button class="add-to-cart" data-name="Hair oil" data-price="20.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="powder.jpg" alt="Bralcon Powder" width="300px" height="300px">
+            <h2>Bralcon Powder</h2>
+            <p>Coffee Powder is a Rich source of antioxidants, it reduces the appearance of ageing signs like wrinkles and fine lines. It improves skin elasticity</p>
+            <p>Price: $28.80</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Bralcon Powder" data-price="28.80">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="serum.jpg" alt="Serum" width="300px" height="300px">
+            <h2>Serum</h2>
+            <p>Serum is crafted to provide much-needed hydration to your skin and make it plump.</p>
+            <p>Price: $50.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Serum" data-price="50.00">Add to Cart</button></a>
+        </div>
+
+        <div class="product">
+            <img src="scrub.jpg" alt="Scrub" width="300px" height="300px">
+            <h2>Scrub</h2>
+            <p>Coffee Body Scrub for Tan-Free & Smooth Skin - 55 g - Natural & Vegan ; Tan & Dead Skin Removal. With a dry blend of Coffee & Coconut Oil, the Coffee Body Scrub.</p>
+            <p>Price: $55.00</p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Scrub" data-price="55.00">Add to Cart</button></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var productName = this.getAttribute('data-name');
+                    var productPrice = parseFloat(this.getAttribute('data-price'));
+
+                    var cartItem = {
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1
+                    };
+
+                    var existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                    existingCartItems.push(cartItem);
+
+                    localStorage.setItem('cart', JSON.stringify(existingCartItems));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); /* Add a background image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: #fff; /* Change text color to white */
+        }
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .product p {
+            margin-top: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #8c6b59;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+            margin-right: 10px;
+        }
+
+        .button:hover {
+            background-color: #724a3c;
+        }
+
+        .add-to-cart {
+            background-color: #4caf50;
+        }
+
+        .add-to-cart:hover {
+            background-color: #45a049;
+        }
+
+        .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .quantity {
+            width: 50px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            margin-right: 10px;
+        }
+
+
+        .product {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+            display: flex;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .product-content {
+            flex-grow: 1;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product.html">Menu</a>
+        <a href="mycart.html">Products</a>
+    </div>
+
+    <div class="content">
+        <div class="product">
+            <img src="coffee1.jpg" alt="Coffee 1">
+            <div class="product-content">
+                <h3>Premium Espresso</h3>
+                <p style="color: #724a3c;">Our specialty blend offers a unique combination of beans from various regions, resulting in a well-balanced and flavorful cup of coffee.</p>
+                <span class="price">$10.00</span>
+                <input type="number" class="quantity" value="1" min="1">
+                <a href="cart.html" class="button add-to-cart" data-product="Premium Espresso" data-price="10.00">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="coffee.jpg" alt="Coffee 2" width="250px" height="200px">
+            <div class="product-content">
+            <h3>Cappuccino Delight</h3>
+            <p style="color: #724a3c;">Experience the distinctive flavors of coffee from a single origin. Each bean tells a story of its terroir and cultivation techniques.</p>
+            <span class="price">$12.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Cappuccino Delight" data-price="12.00">Add to Cart</a>  
+        </div>
+        </div>
+
+        <div class="product">
+            <img src="coffee3.jpg" alt="Coffee 3" width="250px" height="200px">
+            <div class="product-content">
+            <h3>Mocha Madness</h3>
+            <p style="color: #724a3c;">Enjoy the rich and full-bodied taste of our decaffeinated coffee without the caffeine jitters. Perfect for any time of day.</p>
+            <span class="price">Price : $8.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Mocha Madness" data-price="8.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="coffee4.jpg" alt="Coffee 4" width="250px" height="250px">
+            <div class="product-content">
+            <h3>Hot chocolate</h3>
+            <p style="color: #724a3c;"> Hot chocolate is a thick beverage made of melted, solid chocolate blended with milk, cream, or water. Hot cocoa is much thinner than melted chocolate. Added sugar: Hot cocoa often requires you to add sugar to it to adequately sweeten it.</p>
+            <span class="price">$15.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Hot chocolate" data-price="15.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="coldc.jpg" alt="Coffee 5" width="250px" height="250px">
+            <div class="product-content">
+            <h3>Cold Coffee</h3>
+            <p style="color: #724a3c;">Cold-brew coffee allows cold water to infuse with the coffee beans over time. This allows the best of what the beans have to offer to come shining through in the coffee..</p>
+            <span class="price">$25.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Cold Coffee" data-price="25.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="coffee6.jpg" alt="Coffee 6" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Latte</h3>
+            <p style="color: #724a3c;">The caffe latte often has less foam than a cappuccino and is usually served in a taller cup or glass. A caffe latte is an espresso with milk.A latte or caffè latte is a milk coffee that boasts a silky layer of foam as a real highlight to the drink. A true latte will be made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top.</p>
+            <span class="price">$19.50</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Latte" data-price="19.50">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="espresso.jpg" alt="Coffee 7" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Espresso</h3>
+            <p style="color: #724a3c;">Our carefully crafted espresso beans are roasted to perfection, providing a bold and robust flavor for your daily pick-me-up.This small indulgence is known for its bold, rich flavor and high caffeine content. The difference between espresso and a regular cup of coffee is how the beans are brewed. Forcing pressurized water through finely-ground coffee beans produces a concentrated brew with its signature delicate foam.</p>
+            <span class="price">$20.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso" data-price="20.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="FlatWhite.jpg" alt="Coffee 7" width="300px" height="250px">
+            <div class="product-content">
+            <h3>Flat White</h3>
+            <p style="color: #724a3c;">A flat white is a blend of micro-foamed milk poured over a single or double shot of espresso. This microfoam is steamed milk infused with air, to create a smooth and velvety texture and creamy taste.</p>
+            <span class="price">$20.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="20.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="mocha.jpg" alt="Coffee 7" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Mocha</h3>
+            <p style="color: #724a3c;">A mocha is a blend of a cappuccino and a hot chocolate.Our carefully crafted espresso beans are roasted to perfection, providing a bold and robust flavor for your daily pick-me-up.The brewed coffee is mixed with chocolate sauce, creating a delightful balance between the bold coffee flavor and the rich taste of chocolate. Finished with whipped cream, the iced mocha offers a more dessert-like experience as compared to an iced latte.</p>
+            <span class="price">$23.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="23.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="americ.jpg" alt="Coffee 7" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Americano</h3>
+            <p style="color: #724a3c;">A Café Americano, or what we just call an Americano, combines freshly pulled shots of espresso with hot water to achieve the size of a standard cup of brewed coffee</p>
+            <span class="price">$30.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="30.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="caramel.jpg" alt="Coffee 8" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Caramel and Dated Iced</h3>
+            <p style="color: #724a3c;">Caramel iced coffee is a fan favorite, so we're offering you a healthy caramel iced coffee as an alternative. Traditional caramel iced coffee isn't the healthiest, as it contains heaps of sugar and fat. This is thanks to the sugary syrups and whipped cream used in the drink.</p>
+            <span class="price">$44.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="44.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="Coffeeglace.jpg" alt="Coffee 8" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Glace Coffee</h3>
+            <p style="color: #724a3c;">Glace coffee is a coffee beverage served cold. It may be prepared either by brewing coffee normally (i.e. carafe, French press, etc.) and then serving it over ice or in cold milk or by brewing the coffee cold.</p>
+            <span class="price">$25.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="25.00">Add to Cart</a>
+        </div>
+    </div>
+
+        <div class="product">
+            <img src="iced.jpg" alt="Coffee 8" width="300px" height="300px">
+            <div class="product-content">
+            <h3>Iced Coffee</h3>
+            <p style="color: #724a3c;">Iced Coffee creates a bitter taste, which ensures that iced coffee is both healthier and more flavorful than hot coffee. Moderate iced coffee consumption is also associated with a lower risk of heart disease and stroke, thanks to its antioxidant and anti-inflammatory properties.</p>
+            <span class="price">$25.00</span>
+            <input type="number" class="quantity" value="1" min="1">
+            <a href="cart.html" class="button add-to-cart" data-product="Espresso Beans" data-price="25.00">Add to Cart</a>
+        </div>
+    </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var addToCartButtons = document.querySelectorAll('.add-to-cart');
+        
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var productName = this.getAttribute('data-product');
+                    var productPrice = parseFloat(this.getAttribute('data-price'));
+                    var quantity = parseInt(this.previousElementSibling.value);
+        
+                    var cartItem = {
+                        name: productName,
+                        price: productPrice,
+                        quantity: quantity
+                    };
+        
+                    var existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                    existingCartItems.push(cartItem);
+        
+                    localStorage.setItem('cart', JSON.stringify(existingCartItems));
+                });
+            });
+        });
+    </script>
+        
+</body>
+</html>

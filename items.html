@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Items - Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        .item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .item img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .item h2 {
+            color: #8c6b59;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .item p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .item-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #8c6b59;
+            color: #fff;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .item-button:hover {
+            background-color: #724a3c;
+        }
+
+        /* .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item {
+    flex: 0 0 calc(30% - 20px);
+    margin: 15px;
+    max-width: 300px;
+} */
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product.html">Menu</a>
+        <a href="mycart.html">My Cart</a>
+    </div>
+
+    <div class="content">
+        <div class="item">
+            <img src="bevzilla.jpg" alt="Bevzilla Premium Coffee Powder" width="300px" height="300px">
+            <h2>Bevzilla Premium Coffee Powder </h2>
+            <p>Our instant coffee powder range is made from high-quality beans, ensuring a rich taste in every cup.</p>
+            <p><strong>Price: $19.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Bevzilla Premium Coffee Powder " data-price="19.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="nescafe.jpg" alt="Nescafe" width="300px" height="300px">
+            <h2>Nescafe</h2>
+            <p>The unmistakable full-flavour of NESCAFÉ® Classic is what makes our signature coffee so loved all over the world. Savour the wonderfully rich and refreshing.</p>
+            <p><strong>Price: $14.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Nescafe " data-price="19.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="continental.jpg" alt="Continental Xtra Coffee" width="300px" height="300px">
+            <h2>Continental Xtra Coffee</h2>
+            <p>This unique blend consists of 70% pure coﬀee and 30% chicory, which enhances the brew's taste, aroma, and smoothness. This blend has chunky granules in it.</p>
+            <p><strong>Price: $25.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Continental Xtra Coffee" data-price="25.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="cold.jpg" alt="Cold Coffee Powder" width="300px" height="300px">
+            <h2>TATA Cold Coffee Powder</h2>
+            <p>ata Coffee Cold Coffee, Liquid Concentrate, Classic, Deliciously Rich & Creamy, Café-style, Easy to make, 5 Sachets Brown, 100 ML · 100 ml (Pack of 2).</p>
+            <p><strong>Price: $49.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name=" TATA Cold Coffee Powder" data-price="49.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="filter.jpg" alt="Krishna Filter Coffee" width="300px" height="300px">
+            <h2>Krishna Filter Coffee</h2>
+            <p>Filter coffee powder is made with freshly roasted and ground coffee beans that are boiled with water. This process results in a rich and full-bodied cup.</p>
+            <p><strong>Price: $89.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Krishna Filter Coffee " data-price="89.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="organic.jpg" alt="Mantra Colombia organic " width="350px" height="300px">
+            <h2>Mantra Colombia organic </h2>
+            <p>The products are “certified organic”. The products confine to the strictest organic practices adopted worldwide</p>
+            <p><strong>Price: $45.99</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="Mantra Colombia organic  " data-price="45.99">Add to Cart</button></a>
+
+        </div>
+
+        <div class="item">
+            <img src="tata.jpg" alt="TATA Coffee" width="300px" height="300px">
+            <h2>TATA Coffee </h2>
+            <p>The product is a blend of the finest coffee powder & “flavor locked decoction crystals” which gives consumers a 'best in class' taste experience in the instant coffee category. Tata Coffee grand is an intensely rich, fresh and aromatic coffee.</p>
+            <p><strong>Price: $55.00</strong></p>
+            <a href="cart.html"><button class="add-to-cart" data-name="TATA Coffee" data-price="55.00">Add to Cart</button></a>
+        </div>
+
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+            addToCartButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var productName = this.getAttribute('data-name');
+                    var productPrice = parseFloat(this.getAttribute('data-price'));
+
+                    var cartItem = {
+                        name: productName,
+                        price: productPrice,
+                        quantity: 1
+                    };
+
+                    var existingCartItems = JSON.parse(localStorage.getItem('cart')) || [];
+                    existingCartItems.push(cartItem);
+
+                    localStorage.setItem('cart', JSON.stringify(existingCartItems));
+                });
+            });
+        });
+    </script>
+</body>
+</html>

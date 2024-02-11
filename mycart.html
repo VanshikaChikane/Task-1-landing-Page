@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart - Coffee House</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .navbar {
+            background-color: #333;
+            color: white;
+            padding: 18px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .section {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+
+        .section h2 {
+            color: #8c6b59;
+            font-size: 24px;
+        }
+
+        .add-to-cart {
+            background-color: #8c6b59;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background-color: #724a3c;
+        }
+
+        #cart {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .cart-item {
+            margin-bottom: 10px;
+            padding: 5px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+        }
+
+        #total-price {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product.html">Menu</a>
+        <a href="mycart.html">Products</a>
+    </div>
+
+    <div class="content">
+        <div class="section" id="beans-products">
+            <img src="dbean.jpg" alt="beans" width="250px" height="200px">
+            <a href="beans.html"><h2>Beans Products</h2></a>
+        </div>
+
+        <div class="section" id="beauty-products">
+            <img src="beauty.jpg" alt="">
+            <a href="beauty.html"><h2>Beauty Products</h2></a>
+        </div>
+
+        <div class="section" id="Coffee Powders">
+            <img src="powders.jpg" alt="powder"  width="250px" height="200px">
+            <a href="items.html"><h2>Coffee Powders</h2></a>
+        </div>
+
+        
+
+        <div id="total-price"></div>
+    </div>
+
+
+</body>
+</html>

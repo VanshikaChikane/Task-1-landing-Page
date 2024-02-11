@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<style>
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .navbar {
+            background-color: #191a1a;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            display: block;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #2980b9;
+            color: #fff;
+        }
+
+        .content {
+            padding: 50px;
+            text-align: center;
+            color: #ecf0f1;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #e74c3c;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: #e74c3c;
+        }
+
+        .contact-form textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-form button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            background-color: #e74c3c;
+            color: #ecf0f1;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #c0392b;
+        }
+
+        .contact-info {
+            text-align: left;
+            color: #c0392b;
+        }
+
+        .contact-info i {
+            margin-right: 10px;
+            color: #e74c3c;
+        }
+        .contact-form select {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .contact-form select:focus {
+            border-color: #e74c3c;
+        }
+        .contact-form label[for="gender"] {
+        display: block;
+        margin-bottom: 8px;
+        color: #e74c3c;
+        font-size: 16px;
+        text-align:left;
+        }
+
+        footer {
+            background-color: #191a1a;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+</style>
+<meta charset="UTF-8">
+<title>Contact US</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="product.html">Menu</a>
+        <a href="mycart.html">Products</a> 
+    </div>
+<div class="content">
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+            <form action="" method="post">
+                <div class="input-box">
+                    <input type="text" name="uname" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" placeholder="Enter your email">
+                </div>
+                
+                <div class="input-box">
+                    <input type="text" name="number" placeholder="Enter your Contact number">
+                </div>
+                <div class="input-box">
+                    <input type="text" name="message" placeholder="Share Your Views">
+                </div>
+                <div class="button">
+                    <input type="submit" value="submit">
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt"></i> Phone: 123-456-7890<br>
+                    <i class="fas fa-map-marker-alt"></i> Address: 123 Coffee Street, Vashi<br>
+                    <i class="fas fa-envelope"></i> Email: info@coffeehouse.com
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 Coffee House. All Rights Reserved.
+    </footer>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+        const nameInput = document.querySelector('input[name="uname"]');
+        const emailInput = document.querySelector('input[name="email"]');
+        const numberInput = document.querySelector('input[name="number"]');
+        const messageInput = document.querySelector('input[name="message"]');
+        const genderSelect = document.querySelector('select[name="gender"]');
+
+        form.addEventListener("submit", function (event) {
+            let valid = true;
+
+            if (nameInput.value.trim() === "") {
+                valid = false;
+                alert("Name is required.");
+            }
+
+            if (emailInput.value.trim() === "") {
+                valid = false;
+                alert("Email is required.");
+            }
+
+            if (numberInput.value.trim() === "") {
+                valid = false;
+                alert("Contact number is required.");
+            }
+
+            if (messageInput.value.trim() === "") {
+                valid = false;
+                alert("Message is required.");
+            }
+
+            if (genderSelect.value === "") {
+                valid = false;
+                alert("Please select your gender.");
+            }
+
+            if (valid) {
+                alert("Welcome! You have Signed Up to our Coffee Shop Page Successfully");
+            } else {
+                event.preventDefault(); // Prevent form submission if validation fails
+            }
+        });
+    });
+</script>
+
+</div>
+</body>
+</html>
